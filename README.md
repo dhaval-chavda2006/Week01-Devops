@@ -1,22 +1,22 @@
-# Express Health Check
+# Docker & AWS VPC Deployment
 
-Minimal Node.js + Express API with a health check route.
+## 1. Project Overview
+A hands-on DevOps project focused on containerizing a Node.js application with Docker and deploying it on AWS EC2 within a custom VPC. The project focuses on application deployment, network security, and troubleshooting.
 
-## Setup
-```bash
-npm install
-cp .env.example .env   # optional, defaults to PORT=3000
-npm start              # or: npm run dev (auto-restart with nodemon)
-```
+## 2. What I Implemented
+Containerized the Node.js application, managed dependencies and build context, and practised container operations and troubleshooting. On AWS, configured VPC networking, public and private subnets, route tables, and Security Groups to control traffic.
 
-## Test the health route
-```bash
-curl http://localhost:3000/health
-```
-Example response:
-```json
-{ "status": "ok", "uptime": 12, "timestamp": "2026-10-19T10:00:00.000Z" }
-```
+## 3. Technology Choices
+- **Docker:** Consistent application environment and simplified deployment.
+- **EC2:** Compute environment for hosting the application.
+- **AWS VPC:** Network isolation and control over routing and IP addressing.
+- **Security Groups:** Restrict inbound and outbound traffic.
+- **PostgreSQL:** Practise database connectivity and private access, if included in the completed deployment.
 
-## Dependencies
-express, dotenv, cors, morgan, nodemon (dev)
+## 4. Problem Solved
+Addressed practical deployment challenges involving application dependencies, container operation, network connectivity, and access control. The design separates public application access from private database access, reducing unnecessary exposure when implemented and verified.
+
+## 5. Validation and Learning
+Documented deployment tests, network connectivity checks, Security Group behaviour, and troubleshooting scenarios. The project demonstrates practical understanding of containerization, AWS networking, security boundaries, and deployment decisions.
+
+**Repository:** https://github.com/dhaval-chavda2006/Week01-Devops
