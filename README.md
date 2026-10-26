@@ -18,8 +18,7 @@ Addressed practical deployment challenges involving application dependencies, co
 
 ## 5. Validation and Learning
 Documented deployment tests, network connectivity checks, Security Group behaviour, and troubleshooting scenarios. The project demonstrates practical understanding of containerization, AWS networking, security boundaries, and deployment decisions.
-## Validation
 
-Docker container running successfully:
+## ARCHITECTURE FOR DEPLOYMENT OF TWO-TIER NODE APPLICATION
 
 ![Architecture](<highly-available%20two-tier%20node%20application%20deployment.drawio.png>)
